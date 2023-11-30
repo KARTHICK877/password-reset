@@ -23,7 +23,7 @@ export default function Login() {
     console.log("Working sendDataToLogin");
     setLoading(true);
     let { data } = await axios
-      .post(`http://localhost:8080/api/user/login/`, values)
+      .post(`https://karthick-kr.onrender.com/api/user/login/`, values)
       .then((response) => {
         return response;
       })

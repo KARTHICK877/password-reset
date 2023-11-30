@@ -13,7 +13,7 @@ export default function VerifyRandomString() {
     async function verifyRandomString() {
       try {
         const response = await axios.get(
-          `http://localhost:8080/api/user/verifyRandomString/${randomString}`
+          `https://karthick-kr.onrender.com/api/user/verifyRandomString/${randomString}`
         );
 
         if (response.data.message === "Random String Verified") {

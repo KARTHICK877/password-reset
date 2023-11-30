@@ -38,7 +38,7 @@ export default function Register() {
       setLoading(true);
 
       const response = await axios.post(
-        `http://localhost:8080/api/user/signUp`,
+        `https://karthick-kr.onrender.com/api/user/signUp`,
         values
       );
       console.log("Server Response:", response);

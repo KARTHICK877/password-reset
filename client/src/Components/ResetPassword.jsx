@@ -26,7 +26,7 @@ export default function ResetPassword() {
     try {
       // Replace ":randomString" with the extracted random string
       const response = await axios.post(
-        `http://localhost:8080/api/user/resetPassword/${randomString}`,
+        `https://karthick-kr.onrender.com/api/user/resetPassword/${randomString}`,
         values
       );
       console.log("response", response);
